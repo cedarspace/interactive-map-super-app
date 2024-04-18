@@ -1,0 +1,10 @@
+version: '3.8'
+services: 
+  super-app-react:
+    image: dacerron/interactive-map:latest
+    ports: 
+      - "3000:3000"
+  super-app-api:
+    image: dacerron/first-people-api-request:latest 
+    ports:
+      - "3300:3300"
